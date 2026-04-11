@@ -1,27 +1,30 @@
 
 
-## Plan: Add More Color Shades and Green Accents
+## Plan: Convert to Plain HTML/CSS/JavaScript
 
-Currently the site uses a very neutral palette (warm whites, grays, and a single muted green accent `150 25% 35%`). The plan is to enrich the palette with more shades and introduce green tones that complement the natural/eco theme.
+Replace the entire React/TypeScript/Tailwind project with a single `index.html` file containing all HTML, embedded CSS, and vanilla JavaScript — preserving the exact same design, layout, colors, animations, and functionality.
 
-### Changes
+### What will be built
 
-**1. Update CSS variables in `src/index.css`**
-- Add richer green accent color (shift toward a more vibrant natural green)
-- Introduce a secondary green shade for variety (lighter green for backgrounds/highlights)
-- Add subtle green-tinted card and section backgrounds
-- Create more depth with additional muted tones
+A standalone `index.html` file that replicates the current site:
 
-**2. Update `tailwind.config.ts`**
-- Add custom green color tokens (e.g., `nature`, `nature-light`, `nature-dark`) for easy use throughout the site
+- **CSS**: All Tailwind utility classes converted to equivalent plain CSS, using the same HSL color variables, Inter font, responsive breakpoints, and animations (scroll fade-in, bounce arrow)
+- **HTML**: Same semantic structure — sticky header, hero text, video embed, "Ce Facem" section with icon cards, "De Ce Noi" benefits cards, contact CTA, footer with social links
+- **JavaScript**: Vanilla JS for scroll shadow on header, mobile menu toggle, and IntersectionObserver scroll animations
+- **Icons**: Replace Lucide React components with inline SVGs (phone, mail, leaf, waves, tree, droplets, menu, x, instagram, facebook, arrow-down)
+- **Logo**: Still references `/images/logo.png` (the existing file stays)
 
-**3. Update `src/pages/Index.tsx`**
-- Apply green gradient or tinted backgrounds to alternating sections
-- Use green accents on icons, borders, and hover states more prominently
-- Add subtle green tints to the "Ce Facem" icon cards
-- Style the CTA buttons with green tones instead of pure black
-- Add a soft green-tinted background to the benefits section
-- Enhance footer with subtle green accent line or border
+### Files changed
 
-The overall feel will remain minimal and premium but with a richer, more nature-inspired color story.
+1. **`index.html`** — Rewrite with full inline `<style>` and `<script>`, all HTML content, SVG icons, responsive design via media queries
+2. **Delete** all `src/` files, `tailwind.config.ts`, `postcss.config.js`, `vite.config.ts`, `tsconfig*.json`, `components.json`, `package.json`, `bun.lock*`, `package-lock.json`, `eslint.config.js`, `.lovable/`, `vitest.config.ts` — none are needed for a static HTML site
+
+### Technical details
+
+- CSS custom properties (`:root`) map directly from the current HSL values
+- Media queries at 640px, 768px, 1024px replicate the sm/md/lg breakpoints
+- `@keyframes fade-in-up` and `@keyframes bounce` for animations
+- IntersectionObserver with 0.15 threshold for section reveal
+- YouTube embed with same autoplay/loop parameters
+- All `tel:` and `mailto:` links preserved
 
