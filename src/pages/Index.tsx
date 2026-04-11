@@ -40,8 +40,8 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-transparent"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-background ${
+          scrolled ? "shadow-sm" : ""
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -127,12 +127,11 @@ const Index = () => {
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <img src="/images/logo.png" alt="insuleplutitoare.ro" className="h-24 sm:h-32 md:h-40 w-auto mx-auto mb-8 drop-shadow-2xl invert brightness-200" />
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-light tracking-tight text-primary-foreground mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extralight tracking-tight text-white/90 mb-4 leading-tight">
             Ecosisteme Plutitoare
-            <span className="block font-semibold">pentru Viitor</span>
+            <span className="block font-normal">pentru Viitor</span>
           </h1>
-          <p className="text-lg sm:text-xl text-primary-foreground/80 font-light max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-white/60 font-light max-w-2xl mx-auto">
             Peisaje inovatoare care plutesc natural pe apă, transformând lacurile în ecosisteme vii.
           </p>
         </div>
