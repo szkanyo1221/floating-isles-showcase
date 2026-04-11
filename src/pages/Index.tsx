@@ -112,36 +112,35 @@ const Index = () => {
         )}
       </header>
 
-      {/* Hero Section */}
-      <section id="acasa" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <iframe
-            src="https://www.youtube.com/embed/lzDjzQGUcMI?autoplay=1&mute=0&loop=1&playlist=lzDjzQGUcMI&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1"
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] min-w-full min-h-full h-[56.25vw]"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            title="Insule Plutitoare Video"
-            style={{ border: 0 }}
-          />
-          <div className="absolute inset-0 bg-foreground/40" />
-        </div>
-
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extralight tracking-tight text-white/90 mb-4 leading-tight">
+      {/* Hero Text Section */}
+      <section className="pt-28 sm:pt-32 pb-16 sm:pb-20 bg-background text-center px-4">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extralight tracking-tight text-foreground mb-4 leading-tight">
             Ecosisteme Plutitoare
             <span className="block font-normal">pentru Viitor</span>
           </h1>
-          <p className="text-lg sm:text-xl text-white/60 font-light max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground font-light max-w-2xl mx-auto">
             Peisaje inovatoare care plutesc natural pe apă, transformând lacurile în ecosisteme vii.
           </p>
+          <a
+            href="#video"
+            className="inline-block mt-8 text-muted-foreground hover:text-foreground transition-colors animate-bounce"
+          >
+            <ArrowDown className="w-6 h-6" />
+          </a>
         </div>
+      </section>
 
-        <a
-          href="#despre"
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-primary-foreground/60 hover:text-primary-foreground transition-colors animate-bounce"
-        >
-          <ArrowDown className="w-6 h-6" />
-        </a>
+      {/* Video Section */}
+      <section id="video" className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+        <iframe
+          src="https://www.youtube.com/embed/lzDjzQGUcMI?autoplay=1&mute=0&loop=1&playlist=lzDjzQGUcMI&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1"
+          className="absolute inset-0 w-full h-full"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          title="Insule Plutitoare Video"
+          style={{ border: 0 }}
+        />
       </section>
 
       {/* Ce Facem */}
