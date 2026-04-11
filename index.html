@@ -1,19 +1,473 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Insule Plutitoare | Ecosisteme Plutitoare Inovatoare</title>
-    <meta name="description" content="Insule plutitoare - ecosisteme inovatoare din rădăcini, vegetație și sol care plutesc natural pe suprafața apei. Soluții sustenabile pentru lacuri și ape." />
-    <meta name="author" content="insuleplutitoare.ro" />
-    <meta property="og:title" content="Insule Plutitoare | Ecosisteme Plutitoare Inovatoare" />
-    <meta property="og:description" content="Peisaje plutitoare inovatoare pentru lacuri și corpuri de apă din întreaga lume." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="canonical" href="https://insuleplutitoare.ro" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insule Plutitoare | Ecosisteme Plutitoare Inovatoare</title>
+  <meta name="description" content="Insule plutitoare - ecosisteme inovatoare din rădăcini, vegetație și sol care plutesc natural pe suprafața apei. Soluții sustenabile pentru lacuri și ape." />
+  <meta name="author" content="insuleplutitoare.ro" />
+  <meta property="og:title" content="Insule Plutitoare | Ecosisteme Plutitoare Inovatoare" />
+  <meta property="og:description" content="Peisaje plutitoare inovatoare pentru lacuri și corpuri de apă din întreaga lume." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://insuleplutitoare.ro" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --background: 40, 20%, 98%;
+      --foreground: 0, 0%, 8%;
+      --card: 120, 8%, 95%;
+      --card-foreground: 0, 0%, 8%;
+      --primary: 152, 35%, 28%;
+      --primary-foreground: 40, 20%, 98%;
+      --muted-foreground: 0, 0%, 40%;
+      --accent: 152, 40%, 38%;
+      --accent-foreground: 40, 20%, 98%;
+      --border: 140, 8%, 86%;
+      --nature-light: 140, 20%, 94%;
+      --nature-dark: 152, 35%, 22%;
+      --nature-muted: 145, 15%, 85%;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: hsl(var(--background));
+      color: hsl(var(--foreground));
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: hsl(var(--background));
+      transition: box-shadow 0.5s;
+    }
+    .header.scrolled { box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .header-inner {
+      max-width: 80rem; margin: 0 auto; padding: 0 1rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 4rem;
+    }
+    .logo img { height: 2.5rem; width: auto; }
+
+    .nav-desktop { display: none; align-items: center; gap: 2rem; }
+    .nav-desktop a {
+      font-size: 0.875rem; font-weight: 500; letter-spacing: 0.05em;
+      color: hsla(var(--foreground), 0.7);
+      transition: color 0.2s;
+    }
+    .nav-desktop a:hover { color: hsl(var(--accent)); }
+
+    .header-contact { display: none; align-items: center; gap: 1.5rem; font-size: 0.875rem; }
+    .header-contact a {
+      display: flex; align-items: center; gap: 0.5rem;
+      color: hsla(var(--foreground), 0.7); transition: color 0.2s;
+    }
+    .header-contact a:hover { color: hsl(var(--accent)); }
+
+    .mobile-toggle {
+      display: block; background: none; border: none; cursor: pointer;
+      color: hsl(var(--foreground)); padding: 0.5rem;
+    }
+    .mobile-toggle svg { width: 1.5rem; height: 1.5rem; }
+
+    .mobile-menu {
+      display: none; background: hsl(var(--background));
+      border-top: 1px solid hsl(var(--border)); padding: 1.5rem 1rem;
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a {
+      display: block; padding: 0.5rem 0; font-size: 1rem; font-weight: 500;
+      color: hsla(var(--foreground), 0.8);
+    }
+    .mobile-menu a:hover { color: hsl(var(--accent)); }
+    .mobile-menu-divider {
+      margin-top: 1rem; padding-top: 1rem;
+      border-top: 1px solid hsl(var(--border));
+    }
+    .mobile-menu-divider a {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.875rem; color: hsla(var(--foreground), 0.7); padding: 0.4rem 0;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 7rem 1rem 4rem; text-align: center;
+      background: hsl(var(--background));
+    }
+    .hero-inner { max-width: 56rem; margin: 0 auto; }
+    .hero h1 {
+      font-size: 1.875rem; font-weight: 200; letter-spacing: -0.025em;
+      line-height: 1.2; margin-bottom: 1rem;
+    }
+    .hero h1 span { display: block; font-weight: 400; color: hsl(var(--accent)); }
+    .hero p {
+      font-size: 1.125rem; color: hsl(var(--muted-foreground));
+      font-weight: 300; max-width: 42rem; margin: 0 auto;
+    }
+    .hero .arrow-down {
+      display: inline-block; margin-top: 2rem; color: hsl(var(--accent));
+      animation: bounce 1s infinite;
+    }
+    .hero .arrow-down svg { width: 1.5rem; height: 1.5rem; }
+
+    /* Video */
+    .video-section { position: relative; width: 100%; padding-bottom: 56.25%; }
+    .video-section iframe {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+    }
+
+    /* Sections common */
+    .section { padding: 6rem 1rem; }
+    .section-inner { max-width: 64rem; margin: 0 auto; }
+    .section-header { text-align: center; margin-bottom: 4rem; }
+    .section-label {
+      font-size: 0.875rem; font-weight: 500; letter-spacing: 0.2em;
+      text-transform: uppercase; color: hsl(var(--accent)); margin-bottom: 1rem;
+    }
+    .section-title {
+      font-size: 1.875rem; font-weight: 300; line-height: 1.2;
+    }
+    .section-title strong { font-weight: 600; color: hsl(var(--accent)); }
+
+    /* Animate */
+    [data-animate] {
+      opacity: 0; transform: translateY(2rem);
+      transition: opacity 1s, transform 1s;
+    }
+    [data-animate].visible { opacity: 1; transform: translateY(0); }
+
+    /* Ce Facem */
+    .despre { background: hsl(var(--nature-light)); }
+    .despre-grid { display: grid; gap: 3rem; }
+    .despre-text p {
+      font-size: 1.125rem; color: hsl(var(--muted-foreground));
+      line-height: 1.8; margin-bottom: 1.5rem;
+    }
+    .icon-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .icon-card {
+      background: hsl(var(--background)); border-radius: 0.5rem;
+      padding: 1.5rem; text-align: center;
+      border: 1px solid hsl(var(--nature-muted));
+      transition: border-color 0.2s;
+    }
+    .icon-card:hover { border-color: hsla(var(--accent), 0.5); }
+    .icon-card svg {
+      width: 2rem; height: 2rem; margin: 0 auto 0.75rem;
+      color: hsl(var(--accent));
+    }
+    .icon-card p { font-size: 0.875rem; font-weight: 500; }
+
+    /* Beneficii */
+    .beneficii { background: hsl(var(--card)); }
+    .benefits-grid { display: grid; gap: 2rem; }
+    .benefit-card {
+      background: hsl(var(--background)); border-radius: 0.5rem;
+      padding: 2rem; border: 1px solid hsl(var(--border));
+      transition: border-color 0.2s;
+    }
+    .benefit-card:hover { border-color: hsla(var(--accent), 0.3); }
+    .benefit-card h3 {
+      font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem;
+    }
+    .benefit-card p { color: hsl(var(--muted-foreground)); line-height: 1.7; }
+
+    /* Contact */
+    .contact { background: hsl(var(--background)); }
+    .contact-subtitle {
+      margin-top: 1rem; font-size: 1.125rem; color: hsl(var(--muted-foreground));
+    }
+    .contact-buttons {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 1rem; margin-top: 3rem;
+    }
+    .btn-primary {
+      display: flex; align-items: center; gap: 0.75rem;
+      padding: 1rem 2rem; background: hsl(var(--primary));
+      color: hsl(var(--primary-foreground)); border-radius: 0.5rem;
+      font-size: 1.125rem; font-weight: 500; transition: background 0.2s;
+    }
+    .btn-primary:hover { background: hsl(var(--nature-dark)); }
+    .btn-outline {
+      display: flex; align-items: center; gap: 0.75rem;
+      padding: 1rem 2rem; border: 2px solid hsl(var(--primary));
+      color: hsl(var(--primary)); border-radius: 0.5rem;
+      font-size: 1.125rem; font-weight: 500; transition: all 0.2s;
+    }
+    .btn-outline:hover {
+      background: hsl(var(--primary)); color: hsl(var(--primary-foreground));
+    }
+    .btn-primary svg, .btn-outline svg { width: 1.25rem; height: 1.25rem; }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid hsla(var(--accent), 0.2);
+      padding: 3rem 1rem; background: hsl(var(--nature-light));
+    }
+    .footer-inner {
+      max-width: 80rem; margin: 0 auto;
+      display: flex; flex-direction: column; align-items: center; gap: 1.5rem;
+    }
+    .footer-brand { display: flex; align-items: center; gap: 0.75rem; }
+    .footer-brand img { height: 2.5rem; width: auto; }
+    .footer-brand span { font-size: 0.875rem; color: hsl(var(--muted-foreground)); }
+    .footer-social { display: flex; gap: 1rem; }
+    .footer-social a {
+      padding: 0.5rem; color: hsl(var(--muted-foreground)); transition: color 0.2s;
+    }
+    .footer-social a:hover { color: hsl(var(--accent)); }
+    .footer-social svg { width: 1.25rem; height: 1.25rem; }
+
+    /* Animations */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-25%); }
+    }
+
+    /* Responsive */
+    @media (min-width: 640px) {
+      .header-inner { height: 5rem; padding: 0 1.5rem; }
+      .logo img { height: 3.5rem; }
+      .hero { padding: 8rem 1.5rem 5rem; }
+      .hero h1 { font-size: 2.25rem; }
+      .section { padding: 8rem 1.5rem; }
+      .section-title { font-size: 2.25rem; }
+      .contact-buttons { flex-direction: row; justify-content: center; }
+      .benefits-grid { grid-template-columns: repeat(3, 1fr); }
+      .footer-inner { flex-direction: row; justify-content: space-between; }
+    }
+
+    @media (min-width: 768px) {
+      .nav-desktop { display: flex; }
+      .header-contact { display: flex; }
+      .mobile-toggle { display: none; }
+      .despre-grid { grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    }
+
+    @media (min-width: 1024px) {
+      .hero h1 { font-size: 3.75rem; }
+      .section-title { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#acasa" class="logo">
+        <img src="/images/logo.png" alt="insuleplutitoare.ro" />
+      </a>
+      <nav class="nav-desktop">
+        <a href="#acasa">Acasă</a>
+        <a href="#despre">Ce Facem</a>
+        <a href="#beneficii">De Ce Noi</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-contact">
+        <a href="tel:+40755011500">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+40 755 011 500</span>
+        </a>
+        <a href="mailto:jenoszabo68@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span>jenoszabo68@gmail.com</span>
+        </a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Meniu">
+        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#acasa" class="mobile-link">Acasă</a>
+      <a href="#despre" class="mobile-link">Ce Facem</a>
+      <a href="#beneficii" class="mobile-link">De Ce Noi</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <div class="mobile-menu-divider">
+        <a href="tel:+40755011500">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +40 755 011 500
+        </a>
+        <a href="mailto:jenoszabo68@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          jenoszabo68@gmail.com
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="acasa">
+    <div class="hero-inner">
+      <h1>
+        Ecosisteme Plutitoare
+        <span>pentru Viitor</span>
+      </h1>
+      <p>Peisaje inovatoare care plutesc natural pe apă, transformând lacurile în ecosisteme vii.</p>
+      <a href="#video" class="arrow-down">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="video-section" id="video">
+    <iframe
+      src="https://www.youtube.com/embed/lzDjzQGUcMI?autoplay=1&mute=0&loop=1&playlist=lzDjzQGUcMI&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      title="Insule Plutitoare Video"
+    ></iframe>
+  </section>
+
+  <!-- Ce Facem -->
+  <section class="section despre" id="despre" data-animate>
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-label">Ce Facem</p>
+        <h2 class="section-title">Insule plutitoare <strong>naturale</strong></h2>
+      </div>
+      <div class="despre-grid">
+        <div class="despre-text">
+          <p>Creăm ecosisteme plutitoare inovatoare — peisaje compuse din rădăcini, vegetație și sol care plutesc natural pe suprafața apei, fără a fi ancorate de fundul lacului.</p>
+          <p>Insulele noastre pot fi amplasate în orice lac sau corp de apă, oferind o soluție naturală pentru îmbunătățirea calității apei și creșterea biodiversității.</p>
+        </div>
+        <div class="icon-grid">
+          <div class="icon-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 19 2c1 2 2 4.5 1 8-1.5 1-4 2-7 2.5"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            <p>Vegetație naturală</p>
+          </div>
+          <div class="icon-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+            <p>Plutire liberă</p>
+          </div>
+          <div class="icon-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z"/><path d="M12 22v-3"/></svg>
+            <p>Ecosisteme vii</p>
+          </div>
+          <div class="icon-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 14.69c1.46 0 2.65-1.22 2.65-2.69 0-.77-.38-1.5-1.13-2.12-.75-.61-1.28-1.44-1.52-2.38-.24.94-.77 1.77-1.52 2.38-.75.62-1.13 1.35-1.13 2.12 0 1.47 1.19 2.69 2.65 2.69z"/><path d="M17 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S17.29 6.75 17 5.3c-.29 1.45-1.14 2.84-2.29 3.76S13 11.1 13 12.25c0 2.22 1.8 4.05 4 4.05z"/></svg>
+            <p>Purificarea apei</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- De Ce Noi -->
+  <section class="section beneficii" id="beneficii" data-animate>
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-label">De Ce Noi</p>
+        <h2 class="section-title">Beneficii <strong>dovedite</strong></h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>Sustenabilitate</h3>
+          <p>Soluții 100% naturale care funcționează în armonie cu ecosistemele acvatice existente.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Biodiversitate</h3>
+          <p>Creăm habitate pentru pești, păsări și insecte, îmbogățind fauna și flora locală.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Calitatea Apei</h3>
+          <p>Filtrare naturală a apei prin rădăcini și vegetație, reducând poluanții și algele.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact" data-animate>
+    <div class="section-inner" style="max-width: 48rem;">
+      <div class="section-header">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Hai să <strong>vorbim</strong></h2>
+        <p class="contact-subtitle">Contactați-ne pentru a afla cum putem transforma lacul dumneavoastră.</p>
+      </div>
+      <div class="contact-buttons">
+        <a href="tel:+40755011500" class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +40 755 011 500
+        </a>
+        <a href="mailto:jenoszabo68@gmail.com" class="btn-outline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Trimite Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/images/logo.png" alt="insuleplutitoare.ro" />
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> insuleplutitoare.ro</span>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll shadow
+    var header = document.getElementById('header');
+    window.addEventListener('scroll', function() {
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu
+    var toggle = document.getElementById('mobileToggle');
+    var menu = document.getElementById('mobileMenu');
+    var menuIcon = document.getElementById('menuIcon');
+    var closeIcon = document.getElementById('closeIcon');
+    var open = false;
+
+    toggle.addEventListener('click', function() {
+      open = !open;
+      menu.classList.toggle('open', open);
+      menuIcon.style.display = open ? 'none' : 'block';
+      closeIcon.style.display = open ? 'block' : 'none';
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        open = false;
+        menu.classList.remove('open');
+        menuIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+      });
+    });
+
+    // Scroll animations
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('[data-animate]').forEach(function(el) {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
 </html>
