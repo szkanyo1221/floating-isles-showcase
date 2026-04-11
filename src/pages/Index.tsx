@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Mail, Phone, Leaf, Waves, TreePine, Droplets, Menu, X, Instagram, Facebook, ArrowDown } from "lucide-react";
 
 const NAV_LINKS = [
@@ -56,7 +56,7 @@ const Index = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-medium tracking-wide text-foreground/70 hover:text-foreground transition-colors"
+                  className="text-sm font-medium tracking-wide text-foreground/70 hover:text-accent transition-colors"
                 >
                   {link.label}
                 </a>
@@ -64,11 +64,11 @@ const Index = () => {
             </nav>
 
             <div className="hidden md:flex items-center gap-6 text-sm">
-              <a href="tel:+40755011500" className="flex items-center gap-2 text-foreground/70 hover:text-foreground transition-colors">
+              <a href="tel:+40755011500" className="flex items-center gap-2 text-foreground/70 hover:text-accent transition-colors">
                 <Phone className="w-4 h-4" />
                 <span>+40 755 011 500</span>
               </a>
-              <a href="mailto:jenoszabo68@gmail.com" className="flex items-center gap-2 text-foreground/70 hover:text-foreground transition-colors">
+              <a href="mailto:jenoszabo68@gmail.com" className="flex items-center gap-2 text-foreground/70 hover:text-accent transition-colors">
                 <Mail className="w-4 h-4" />
                 <span>jenoszabo68@gmail.com</span>
               </a>
@@ -94,7 +94,7 @@ const Index = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenu(false)}
-                  className="block text-base font-medium text-foreground/80 hover:text-foreground"
+                  className="block text-base font-medium text-foreground/80 hover:text-accent"
                 >
                   {link.label}
                 </a>
@@ -117,14 +117,14 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-extralight tracking-tight text-foreground mb-4 leading-tight">
             Ecosisteme Plutitoare
-            <span className="block font-normal">pentru Viitor</span>
+            <span className="block font-normal text-accent">pentru Viitor</span>
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground font-light max-w-2xl mx-auto">
             Peisaje inovatoare care plutesc natural pe apă, transformând lacurile în ecosisteme vii.
           </p>
           <a
             href="#video"
-            className="inline-block mt-8 text-muted-foreground hover:text-foreground transition-colors animate-bounce"
+            className="inline-block mt-8 text-accent hover:text-accent/80 transition-colors animate-bounce"
           >
             <ArrowDown className="w-6 h-6" />
           </a>
@@ -144,7 +144,7 @@ const Index = () => {
       </section>
 
       {/* Ce Facem */}
-      <section id="despre" className="py-24 sm:py-32" data-animate>
+      <section id="despre" className="py-24 sm:py-32 bg-nature-light" data-animate>
         <div
           className={`max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${
             isVisible("despre") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -153,7 +153,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <p className="text-sm font-medium tracking-[0.2em] uppercase text-accent mb-4">Ce Facem</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-foreground leading-tight">
-              Insule plutitoare <span className="font-semibold">naturale</span>
+              Insule plutitoare <span className="font-semibold text-accent">naturale</span>
             </h2>
           </div>
 
@@ -178,7 +178,7 @@ const Index = () => {
               ].map(({ icon: Icon, label }) => (
                 <div
                   key={label}
-                  className="bg-card rounded-lg p-6 text-center border border-border hover:border-accent/30 transition-colors"
+                  className="bg-background rounded-lg p-6 text-center border border-nature-muted hover:border-accent/50 transition-colors"
                 >
                   <Icon className="w-8 h-8 mx-auto mb-3 text-accent" />
                   <p className="text-sm font-medium text-foreground">{label}</p>
@@ -199,7 +199,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <p className="text-sm font-medium tracking-[0.2em] uppercase text-accent mb-4">De Ce Noi</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-foreground leading-tight">
-              Beneficii <span className="font-semibold">dovedite</span>
+              Beneficii <span className="font-semibold text-accent">dovedite</span>
             </h2>
           </div>
 
@@ -218,7 +218,7 @@ const Index = () => {
                 desc: "Filtrare naturală a apei prin rădăcini și vegetație, reducând poluanții și algele.",
               },
             ].map((item) => (
-              <div key={item.title} className="bg-background rounded-lg p-8 border border-border">
+              <div key={item.title} className="bg-background rounded-lg p-8 border border-border hover:border-accent/30 transition-colors">
                 <h3 className="text-xl font-semibold text-foreground mb-3">{item.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
               </div>
@@ -228,7 +228,7 @@ const Index = () => {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="py-24 sm:py-32" data-animate>
+      <section id="contact" className="py-24 sm:py-32 bg-background" data-animate>
         <div
           className={`max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${
             isVisible("contact") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -237,7 +237,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <p className="text-sm font-medium tracking-[0.2em] uppercase text-accent mb-4">Contact</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-foreground leading-tight">
-              Hai să <span className="font-semibold">vorbim</span>
+              Hai să <span className="font-semibold text-accent">vorbim</span>
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Contactați-ne pentru a afla cum putem transforma lacul dumneavoastră.
@@ -247,7 +247,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
             <a
               href="tel:+40755011500"
-              className="flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity text-lg font-medium"
+              className="flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-nature-dark transition-colors text-lg font-medium"
             >
               <Phone className="w-5 h-5" />
               +40 755 011 500
@@ -264,7 +264,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-12">
+      <footer className="border-t border-accent/20 py-12 bg-nature-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
@@ -277,7 +277,7 @@ const Index = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="p-2 text-muted-foreground hover:text-accent transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -286,7 +286,7 @@ const Index = () => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="p-2 text-muted-foreground hover:text-accent transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
