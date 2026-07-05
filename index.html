@@ -607,6 +607,138 @@
     document.querySelectorAll('[data-animate]').forEach(function(el) {
       observer.observe(el);
     });
+
+    // ---- Gallery + Lightbox ----
+    var BASE = '/images/gallery/';
+    fetch(BASE + 'manifest.json').then(function(r){ return r.json(); }).then(function(items){
+      var m = document.getElementById('masonry');
+      var frag = document.createDocumentFragment();
+      items.forEach(function(it, i){
+        var fig = document.createElement('figure');
+        fig.className = 'masonry-item';
+        fig.setAttribute('tabindex','0');
+        fig.setAttribute('role','button');
+        fig.setAttribute('aria-label', it.alt);
+        fig.dataset.index = i;
+        fig.style.aspectRatio = it.w + ' / ' + it.h;
+        var img = document.createElement('img');
+        img.alt = it.alt;
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.width = it.w; img.height = it.h;
+        img.style.backgroundImage = 'url(' + it.blur + ')';
+        img.sizes = '(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw';
+        img.srcset = BASE+it.slug+'-480.webp 480w, '+BASE+it.slug+'-960.webp 960w, '+BASE+it.slug+'-1600.webp 1600w';
+        img.src = BASE+it.slug+'-960.webp';
+        img.addEventListener('load', function(){ img.classList.add('loaded'); });
+        var cap = document.createElement('figcaption');
+        cap.textContent = it.alt;
+        fig.appendChild(img); fig.appendChild(cap);
+        fig.addEventListener('click', function(){ openLb(i); });
+        fig.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openLb(i); } });
+        frag.appendChild(fig);
+      });
+      m.appendChild(frag);
+      window.__gallery = items;
+
+      // JSON-LD ImageGallery
+      var ld = {
+        "@context":"https://schema.org",
+        "@type":"ImageGallery",
+        "name":"Galerie Insule Plutitoare",
+        "url":"https://insuleplutitoare.ro/#galerie",
+        "image": items.map(function(it){ return {
+          "@type":"ImageObject",
+          "contentUrl":"https://insuleplutitoare.ro"+BASE+it.slug+"-1600.webp",
+          "thumbnailUrl":"https://insuleplutitoare.ro"+BASE+it.slug+"-480.webp",
+          "name": it.alt,
+          "description": it.alt,
+          "width": it.w, "height": it.h
+        }; })
+      };
+      var s = document.createElement('script');
+      s.type = 'application/ld+json';
+      s.textContent = JSON.stringify(ld);
+      document.head.appendChild(s);
+    });
+
+    var lb = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lbImg');
+    var lbCap = document.getElementById('lbCap');
+    var lbCounter = document.getElementById('lbCounter');
+    var current = 0; var slideTimer = null;
+
+    function openLb(i){
+      current = i; renderLb();
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('lbClose').focus();
+    }
+    function closeLb(){
+      lb.classList.remove('open');
+      document.body.style.overflow = '';
+      stopSlideshow();
+      lbImg.classList.remove('zoomed');
+    }
+    function renderLb(){
+      var it = window.__gallery[current];
+      if(!it) return;
+      lbImg.classList.remove('zoomed');
+      lbImg.src = BASE + it.slug + '-1600.webp';
+      lbImg.alt = it.alt;
+      lbCap.textContent = it.alt;
+      lbCounter.textContent = (current+1) + ' / ' + window.__gallery.length;
+    }
+    function next(){ current = (current+1) % window.__gallery.length; renderLb(); }
+    function prev(){ current = (current-1+window.__gallery.length) % window.__gallery.length; renderLb(); }
+
+    document.getElementById('lbClose').addEventListener('click', closeLb);
+    document.getElementById('lbNext').addEventListener('click', next);
+    document.getElementById('lbPrev').addEventListener('click', prev);
+    lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+    lbImg.addEventListener('click', function(e){ e.stopPropagation(); lbImg.classList.toggle('zoomed'); });
+
+    document.addEventListener('keydown', function(e){
+      if(!lb.classList.contains('open')) return;
+      if(e.key === 'Escape') closeLb();
+      else if(e.key === 'ArrowRight') next();
+      else if(e.key === 'ArrowLeft') prev();
+    });
+
+    // Touch swipe
+    var tx = 0, ty = 0;
+    lb.addEventListener('touchstart', function(e){ tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, {passive:true});
+    lb.addEventListener('touchend', function(e){
+      var dx = e.changedTouches[0].clientX - tx;
+      var dy = e.changedTouches[0].clientY - ty;
+      if(Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)){ dx < 0 ? next() : prev(); }
+      else if(dy > 80 && Math.abs(dy) > Math.abs(dx)) closeLb();
+    });
+
+    function startSlideshow(){ stopSlideshow(); slideTimer = setInterval(next, 3500); document.getElementById('lbSlideshow').setAttribute('aria-label','Oprește slideshow'); }
+    function stopSlideshow(){ if(slideTimer){ clearInterval(slideTimer); slideTimer = null; document.getElementById('lbSlideshow').setAttribute('aria-label','Pornește slideshow'); } }
+    document.getElementById('lbSlideshow').addEventListener('click', function(){ slideTimer ? stopSlideshow() : startSlideshow(); });
+  </script>
+
+  <!-- Organization + WebSite schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Insule Plutitoare",
+    "url": "https://insuleplutitoare.ro",
+    "logo": "https://insuleplutitoare.ro/images/logo.png",
+    "image": "https://insuleplutitoare.ro/images/og-insule-plutitoare.jpg",
+    "description": "Ecosisteme plutitoare inovatoare din vegetație, rădăcini și substrat pentru lacuri și corpuri de apă.",
+    "areaServed": "RO",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+40-755-011-500",
+      "email": "jenoszabo68@gmail.com",
+      "contactType": "customer service",
+      "availableLanguage": ["Romanian"]
+    }
+  }
   </script>
 
 </body>
