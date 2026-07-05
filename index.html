@@ -542,6 +542,29 @@
     </div>
   </footer>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galerie imagini insule plutitoare">
+    <div class="lb-counter" id="lbCounter">1 / 10</div>
+    <div class="lb-top">
+      <button type="button" id="lbSlideshow" aria-label="Pornește slideshow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+      </button>
+      <button type="button" id="lbClose" aria-label="Închide galeria">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <button type="button" class="lightbox-btn lb-prev" id="lbPrev" aria-label="Imaginea anterioară">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" id="lbImg" alt="" />
+      <figcaption class="lightbox-caption" id="lbCap"></figcaption>
+    </figure>
+    <button type="button" class="lightbox-btn lb-next" id="lbNext" aria-label="Imaginea următoare">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+  </div>
+
   <script>
     // Scroll shadow
     var header = document.getElementById('header');
