@@ -55,4 +55,9 @@
       <image:caption>Specialist inspectând o insulă plutitoare proaspăt instalată pe un lac montan</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://insuleplutitoare.ro/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
