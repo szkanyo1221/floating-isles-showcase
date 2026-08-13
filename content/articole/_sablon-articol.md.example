@@ -1,0 +1,31 @@
+---
+title: Titlul articolului
+slug: titlul-articolului
+excerpt: Descriere scurtă de 1-2 propoziții, afișată pe cardul articolului și în rezultatele Google.
+category: insule-plutitoare
+tags: insule plutitoare, calitatea apei
+author: Echipa insuleplutitoare.ro
+date: 2026-01-15
+updated: 2026-01-20
+image: /images/blog/nume-imagine-seo.webp
+imageAlt: Descriere în română a imaginii principale
+seoTitle: Titlu SEO sub 60 de caractere
+seoDescription: Descriere SEO sub 160 de caractere.
+ogImage: /images/blog/nume-imagine-seo.webp
+keywords: insule plutitoare, fitoremediere, biodiversitate
+featured: true
+status: published
+---
+
+## Subtitlu principal
+
+Paragraf normal cu **text îngroșat**, *italic* și un [link intern](/#contact).
+
+### Subtitlu secundar
+
+- Element de listă
+- Alt element de listă
+
+> Citat evidențiat sau informație importantă.
+
+![Descriere imagine în română](/images/blog/imagine-in-articol.webp "Legenda afișată sub imagine")

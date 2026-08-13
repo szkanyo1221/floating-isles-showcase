@@ -1,0 +1,22 @@
+{
+  "siteUrl": "https://insuleplutitoare.ro",
+  "blogTitle": "Blog",
+  "blogHeading": "CUNOAȘTERE <strong>PLUTITOARE</strong>",
+  "blogTagline": "Articole despre insule plutitoare, calitatea apei, biodiversitate și soluții bazate pe natură pentru lacuri și corpuri de apă.",
+  "blogMetaTitle": "Blog | Insule plutitoare, calitatea apei și biodiversitate",
+  "blogMetaDescription": "Articole de specialitate despre insule plutitoare artificiale, fitoremediere, plante acvatice, biodiversitate și restaurarea ecosistemelor acvatice din România.",
+  "postsPerPage": 9,
+  "defaultAuthor": "Echipa insuleplutitoare.ro",
+  "defaultImage": "/images/og-insule-plutitoare.jpg",
+  "defaultImageAlt": "Insulă plutitoare cu vegetație bogată pe lac",
+  "categories": [
+    { "slug": "insule-plutitoare", "name": "Insule plutitoare", "description": "Tehnologia, construcția și instalarea insulelor plutitoare artificiale." },
+    { "slug": "biodiversitate", "name": "Biodiversitate", "description": "Habitate pentru pești, păsări, amfibieni și insecte polenizatoare." },
+    { "slug": "calitatea-apei", "name": "Calitatea apei", "description": "Fitoremediere, reducerea nutrienților și controlul înfloririi algelor." },
+    { "slug": "plante-acvatice", "name": "Plante acvatice", "description": "Specii, rădăcini, biofilm și substraturi folosite pe insulele plutitoare." },
+    { "slug": "solutii-ecologice", "name": "Soluții ecologice", "description": "Soluții bazate pe natură pentru gestionarea corpurilor de apă." },
+    { "slug": "proiecte", "name": "Proiecte", "description": "Studii de caz și proiecte realizate pe lacuri, baraje și cariere." },
+    { "slug": "educatie", "name": "Educație", "description": "Ghiduri și explicații despre ecosistemele acvatice." },
+    { "slug": "noutati", "name": "Noutăți", "description": "Noutăți din activitatea noastră și din domeniul mediului." }
+  ]
+}
