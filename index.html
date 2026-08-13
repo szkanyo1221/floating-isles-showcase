@@ -256,6 +256,8 @@
     .footer-brand { display: flex; align-items: center; gap: 0.75rem; }
     .footer-brand img { height: 2.5rem; width: auto; }
     .footer-brand span { font-size: 0.875rem; color: hsl(var(--muted-foreground)); }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; font-size: 0.85rem; color: hsl(var(--muted-foreground)); }
+    .footer-links a:hover { color: hsl(var(--accent)); }
     .footer-social { display: flex; gap: 1rem; }
     .footer-social a {
       padding: 0.5rem; color: hsl(var(--muted-foreground)); transition: color 0.2s;
@@ -374,6 +376,7 @@
         <a href="#acasa">Acasă</a>
         <a href="#despre">Ce Facem</a>
         <a href="#galerie">Galerie</a>
+        <a href="/blog/">Blog</a>
         <a href="#beneficii">De Ce Noi</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -396,6 +399,7 @@
       <a href="#acasa" class="mobile-link">Acasă</a>
       <a href="#despre" class="mobile-link">Ce Facem</a>
       <a href="#galerie" class="mobile-link">Galerie</a>
+      <a href="/blog/" class="mobile-link">Blog</a>
       <a href="#beneficii" class="mobile-link">De Ce Noi</a>
       <a href="#contact" class="mobile-link">Contact</a>
       <div class="mobile-menu-divider">
@@ -532,6 +536,12 @@
         <img src="/images/logo.png" alt="insuleplutitoare.ro" />
         <span>&copy; <script>document.write(new Date().getFullYear())</script> insuleplutitoare.ro</span>
       </div>
+      <nav class="footer-links" aria-label="Navigare secundară">
+        <a href="/#despre">Ce facem</a>
+        <a href="/#galerie">Galerie</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#contact">Contact</a>
+      </nav>
       <div class="footer-social">
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
