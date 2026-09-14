@@ -169,7 +169,7 @@ function header(active) {
         ${nav}
       </nav>
       <div class="header-contact">
-        <a href="tel:+40755011497">${ICON.phone}<span>+40 755 011 497</span></a>
+        <a href="tel:+40755011500">${ICON.phone}<span>0040755011500</span></a>
         <a href="mailto:jenoszabo68@gmail.com">${ICON.mail}<span>jenoszabo68@gmail.com</span></a>
       </div>
       <button class="mobile-toggle" id="mobileToggle" aria-label="Deschide meniul" aria-expanded="false" aria-controls="mobileMenu">
@@ -180,7 +180,7 @@ function header(active) {
     <nav class="mobile-menu" id="mobileMenu" aria-label="Navigare mobil">
       ${mob}
       <div class="mobile-menu-divider">
-        <a href="tel:+40755011497">${ICON.phone}+40 755 011 497</a>
+        <a href="tel:+40755011500">${ICON.phone}0040755011500</a>
         <a href="mailto:jenoszabo68@gmail.com">${ICON.mail}jenoszabo68@gmail.com</a>
       </div>
     </nav>
