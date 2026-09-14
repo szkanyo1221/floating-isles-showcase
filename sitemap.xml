@@ -93,4 +93,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://insuleplutitoare.ro/cursuri-hidrobiologie/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://insuleplutitoare.ro/cursuri-hidrobiologie/naui-scuba-diver/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://insuleplutitoare.ro/cursuri-hidrobiologie/naui-underwater-naturalist-diver/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://insuleplutitoare.ro/cursuri-hidrobiologie/naui-citizen-science-diver/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -152,6 +152,7 @@ function header(active) {
     ['/', 'Acasă', 'acasa'],
     ['/#despre', 'Ce Facem', 'despre'],
     ['/#galerie', 'Galerie', 'galerie'],
+    ['/cursuri-hidrobiologie/', 'Cursuri', 'cursuri'],
     ['/blog/', 'Blog', 'blog'],
     ['/#beneficii', 'De Ce Noi', 'beneficii'],
     ['/#contact', 'Contact', 'contact'],
@@ -196,6 +197,7 @@ const footer = () => `  <footer class="footer">
         <a href="/">Acasă</a>
         <a href="/#despre">Ce facem</a>
         <a href="/#galerie">Galerie</a>
+        <a href="/cursuri-hidrobiologie/">Cursuri de hidrobiologie</a>
         <a href="/blog/">Blog</a>
         <a href="/#contact">Contact</a>
       </nav>
