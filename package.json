@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "blog": "node scripts/build-blog.mjs",
-    "predev": "node scripts/build-blog.mjs",
-    "prebuild": "node scripts/build-blog.mjs",
+    "cursuri": "node scripts/build-cursuri.mjs",
+    "static": "node scripts/build-blog.mjs && node scripts/build-cursuri.mjs",
+    "predev": "node scripts/build-blog.mjs && node scripts/build-cursuri.mjs",
+    "prebuild": "node scripts/build-blog.mjs && node scripts/build-cursuri.mjs",
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
