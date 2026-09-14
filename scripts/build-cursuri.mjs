@@ -77,7 +77,7 @@ const COURSES = [
     metaTitle: 'NAUI Underwater Naturalist Diver — curs de naturalist subacvatic | Insule Plutitoare',
     metaDescription: 'Curs de specializare dedicat observării vieții subacvatice: identificarea organismelor, habitate acvatice, biodiversitate și observație responsabilă în timpul scufundării.',
     intro: 'Un curs dedicat explorării și înțelegerii vieții subacvatice. Participanții învață să observe organismele și habitatele acvatice, să recunoască relațiile dintre organisme și mediul lor și să privească scufundarea din perspectiva unui observator al ecosistemului.',
-    price: TBD,
+    price: '3000 RON',
     duration: TBD,
     location: TBD,
     nextSession: TBD,
@@ -138,7 +138,7 @@ const COURSES = [
     metaTitle: 'NAUI Citizen Science Diver — curs de citizen science pentru scafandri | Insule Plutitoare',
     metaDescription: 'Curs care leagă scufundările de cercetarea participativă: observație subacvatică, documentarea biodiversității și monitorizarea ecosistemelor acvatice.',
     intro: 'Un curs care face legătura dintre scufundări și cercetarea participativă. Scafandrii sunt introduși în principiile observării, documentării și colectării de informații despre mediul acvatic, astfel încât observațiile realizate sub apă să poată contribui la proiecte de monitorizare și cunoaștere a ecosistemelor.',
-    price: TBD,
+    price: '3000 RON',
     duration: TBD,
     location: TBD,
     nextSession: TBD,
@@ -244,7 +244,7 @@ function header(active) {
         ${nav}
       </nav>
       <div class="header-contact">
-        <a href="tel:+40755011500">${ICON.phone}<span>+40 755 011 500</span></a>
+        <a href="tel:+40755011497">${ICON.phone}<span>+40 755 011 497</span></a>
         <a href="mailto:jenoszabo68@gmail.com">${ICON.mail}<span>jenoszabo68@gmail.com</span></a>
       </div>
       <button class="mobile-toggle" id="mobileToggle" aria-label="Deschide meniul" aria-expanded="false" aria-controls="mobileMenu">
@@ -255,7 +255,7 @@ function header(active) {
     <nav class="mobile-menu" id="mobileMenu" aria-label="Navigare mobil">
       ${mob}
       <div class="mobile-menu-divider">
-        <a href="tel:+40755011500">${ICON.phone}+40 755 011 500</a>
+        <a href="tel:+40755011497">${ICON.phone}+40 755 011 497</a>
         <a href="mailto:jenoszabo68@gmail.com">${ICON.mail}jenoszabo68@gmail.com</a>
       </div>
     </nav>
@@ -379,7 +379,7 @@ function enrollForm(preselect) {
       </div>
       <button type="submit" class="btn-primary">Trimite cererea</button>
       <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-      <p class="form-hint">Cererea se trimite prin e-mail către jenoszabo68@gmail.com. Ne poți suna și la <a href="tel:+40755011500" style="text-decoration:underline">+40 755 011 500</a>.</p>
+      <p class="form-hint">Cererea se trimite prin e-mail către jenoszabo68@gmail.com. Ne poți suna și la <a href="tel:+40755011497" style="text-decoration:underline">+40 755 011 497</a>.</p>
     </form>
   </div>
 </section>`;
