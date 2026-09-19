@@ -45,6 +45,8 @@ Frunzele, vegetația moartă și resturile depuse pe fund se descompun și elibe
 
 Plantele acvatice folosesc aceiași nutrienți de care depind și algele. Cu cât vegetația este mai bine reprezentată, cu atât competiția pentru resurse este mai echilibrată. În plus, vegetația creează zone de umbră, iar apa umbrită se încălzește mai greu.
 
+Pentru alegerea vegetației după adâncime, lumină și rol, consultă ghidul despre [plante acvatice pentru iaz și lac](/blog/plante-acvatice-pentru-iaz-si-lac/).
+
 ### 4. Mișcarea și oxigenarea apei
 
 Zonele complet stagnante sunt cele mai vulnerabile. Orice element care ajută circulația apei contribuie la un ecosistem mai stabil.
