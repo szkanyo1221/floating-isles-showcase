@@ -54,6 +54,8 @@ Un iaz alimentat constant se comportă diferit de un bazin în care nivelul scad
 
 Clarifică prioritatea: aspect peisagistic, habitat, umbrire, integrarea unui mal rigid sau susținerea calității apei. De cele mai multe ori obiectivele se combină, însă această ordine ajută la alegerea zonelor și a densității vegetației.
 
+![Insulă vegetală plutitoare cu vegetație acvatică matură, integrată într-un canal urban din București](/images/gallery/insula-vegetala-plutitoare-canal-urban-bucuresti-1600.webp "Vegetația acvatică matură poate integra natural un corp de apă într-un peisaj urban construit.")
+
 ## Trei grupe de plante și locul lor în apă
 
 ### Plante de mal și plante emergente
@@ -99,6 +101,8 @@ Plantarea directă este potrivită acolo unde există substrat, adâncime mică 
 
 O insulă plutitoare nu exclude vegetația de mal. Cele două soluții se pot completa: plantele marginale lucrează în zona de tranziție, iar insula aduce vegetație acolo unde plantarea clasică nu este posibilă. Pentru alegerea dimensiunii și a poziției, vezi ghidul despre [amplasarea și întreținerea unei insule plutitoare](/blog/insula-plutitoare-iaz-cum-alegi-amplasare-intretinere/).
 
+![Insulă vegetală plutitoare cu plante acvatice dense, amplasată într-un canal](/images/gallery/insula-vegetala-plutitoare-plante-acvatice-canal-1600.webp "Plantele dezvoltate formează o suprafață vegetală densă chiar și acolo unde plantarea în substrat nu este posibilă.")
+
 ![Structură modulară de insulă plutitoare cu plante emergente, pregătită pentru dezvoltare](/images/gallery/insula-plutitoare-structura-modulara-iuta-1600.webp "Structura susține vegetația acolo unde plantele nu pot fi fixate în fundul lacului.")
 
 ## Greșeli frecvente de evitat
@@ -122,6 +126,8 @@ O insulă plutitoare nu exclude vegetația de mal. Cele două soluții se pot co
 - Sunt speciile alese potrivite și permise pentru amplasamentul respectiv?
 
 Poți compara răspunsurile cu exemplele reale din [galeria noastră de proiecte](/#galerie). Fotografiile arată atât insule proaspăt plantate, cât și vegetație ajunsă la maturitate, în corpuri de apă diferite.
+
+![Insulă plutitoare cu vegetație matură și reflexie în apă, într-un peisaj urban](/images/gallery/insula-plutitoare-vegetatie-matura-reflexie-oras-1600.webp "O insulă ajunsă la maturitate se integrează în peisaj și adaugă structură habitatului acvatic.")
 
 ## Întrebări frecvente despre plantele acvatice
 
