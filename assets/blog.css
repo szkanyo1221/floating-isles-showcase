@@ -158,7 +158,7 @@ img { max-width: 100%; }
   font-size: 1.12rem; font-weight: 300; font-style: italic; color: hsl(var(--nature-dark));
 }
 .article-body figure { margin: 2rem 0; }
-.article-body figure img { width: 100%; border-radius: 0.75rem; display: block; background: hsl(var(--nature-muted)); }
+.article-body figure img { width: 100%; height: auto; border-radius: 0.75rem; display: block; background: hsl(var(--nature-muted)); }
 .article-body figcaption { margin-top: 0.6rem; font-size: 0.85rem; color: hsl(var(--muted-foreground)); text-align: center; }
 .article-body hr { border: none; border-top: 1px solid hsl(var(--border)); margin: 2.5rem 0; }
 
