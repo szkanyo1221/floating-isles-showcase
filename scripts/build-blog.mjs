@@ -116,10 +116,10 @@ function responsiveImageAttrs(src) {
 }
 
 function extractFaq(md) {
-  const section = md.match(/^## Întrebări frecvente[^\n]*\n([\s\S]*?)(?=^##\s|\z)/m);
+  const section = md.match(/^## Întrebări frecvente[^\n]*\n([\s\S]*?)(?=^##\s|(?![\s\S]))/m);
   if (!section) return [];
   const entries = [];
-  const pattern = /^###\s+(.+)\n([\s\S]*?)(?=^###\s|\z)/gm;
+  const pattern = /^###\s+(.+)\n([\s\S]*?)(?=^###\s|(?![\s\S]))/gm;
   for (const match of section[1].matchAll(pattern)) {
     const answer = match[2]
       .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
