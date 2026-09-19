@@ -89,7 +89,7 @@ Expresia „plante pentru filtrarea apei” poate crea așteptarea că o anumit�
 
 Plantele emergente viguroase sunt frecvent folosite deoarece dezvoltă rădăcini și țesut vegetal consistent. Efectul nu vine însă doar din numele speciei, ci din contactul dintre rădăcini, apă și microorganisme. Din acest motiv, amplasarea și suprafața disponibilă sunt decisive.
 
-![Insulă vegetală plutitoare cu plante acvatice mature într-un canal urban](/images/gallery/insula-vegetala-plutitoare-canal-urban-bucuresti-1600.webp "Vegetația acvatică poate fi introdusă și în corpuri de apă cu margini construite.")
+![Insulă plutitoare cu vegetație acvatică matură și flori de salicaria, amplasată pe un lac](/images/gallery/insula-plutitoare-baraj-flori-salicaria-1600.webp "Vegetația matură combină rolul ecologic cu integrarea naturală în peisaj.")
 
 ## Când este utilă o insulă vegetală plutitoare
 
