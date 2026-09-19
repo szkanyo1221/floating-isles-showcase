@@ -37,6 +37,8 @@ Practic, aduci vegetație acolo unde plantarea clasică nu este posibilă — pe
 
 De cele mai multe ori scopurile se suprapun, dar ordinea lor influențează unde amplasezi insula și cât de mare o faci.
 
+Dacă nu ai stabilit încă vegetația, ghidul despre [plante acvatice pentru iaz și lac](/blog/plante-acvatice-pentru-iaz-si-lac/) te ajută să alegi după adâncime, lumină și funcție.
+
 ### Informații utile despre corpul tău de apă
 
 Ne ajută să propunem o soluție realistă dacă știi:

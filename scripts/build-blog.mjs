@@ -13,6 +13,10 @@ const OUT = join(ROOT, 'blog');
 
 const cfg = JSON.parse(readFileSync(join(CONTENT, 'blog.config.json'), 'utf8'));
 const SITE = cfg.siteUrl.replace(/\/$/, '');
+const galleryManifestPath = join(ROOT, 'images', 'gallery', 'manifest.json');
+const galleryImages = existsSync(galleryManifestPath)
+  ? new Map(JSON.parse(readFileSync(galleryManifestPath, 'utf8')).map(image => [image.slug, image]))
+  : new Map();
 
 /* ---------------- utils ---------------- */
 const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -71,7 +75,8 @@ function renderMarkdown(md) {
     if (img) {
       flushAll();
       const cap = img[3] ? `<figcaption>${esc(img[3])}</figcaption>` : '';
-      out.push(`<figure><img src="${esc(img[2])}" alt="${esc(img[1])}" loading="lazy" decoding="async" />${cap}</figure>`);
+      const responsive = responsiveImageAttrs(img[2]);
+      out.push(`<figure><img src="${esc(img[2])}" alt="${esc(img[1])}" loading="lazy" decoding="async"${responsive} />${cap}</figure>`);
       continue;
     }
     const h = line.match(/^(#{2,4})\s+(.*)$/);
@@ -98,6 +103,33 @@ function renderMarkdown(md) {
   }
   flushAll();
   return out.join('\n');
+}
+
+function responsiveImageAttrs(src) {
+  const match = src.match(/^\/images\/gallery\/(.+)-(480|960|1600)\.webp$/);
+  if (!match) return '';
+  const image = galleryImages.get(match[1]);
+  if (!image) return '';
+  const widths = [480, 960, 1600].filter(width => width <= image.w || width === 480);
+  const sources = widths.map(width => `/images/gallery/${match[1]}-${width}.webp ${width}w`).join(', ');
+  return ` srcset="${esc(sources)}" sizes="(max-width: 736px) calc(100vw - 32px), 704px" width="${image.w}" height="${image.h}"`;
+}
+
+function extractFaq(md) {
+  const section = md.match(/^## Întrebări frecvente[^\n]*\n([\s\S]*?)(?=^##\s|(?![\s\S]))/m);
+  if (!section) return [];
+  const entries = [];
+  const pattern = /^###\s+(.+)\n([\s\S]*?)(?=^###\s|(?![\s\S]))/gm;
+  for (const match of section[1].matchAll(pattern)) {
+    const answer = match[2]
+      .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(/[*_>#-]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (answer) entries.push({ question: match[1].trim(), answer });
+  }
+  return entries;
 }
 
 /* ---------------- load articles ---------------- */
@@ -133,6 +165,7 @@ if (existsSync(ARTICLES_DIR)) {
       featured: String(data.featured).toLowerCase() === 'true',
       readingTime: Math.max(1, Math.round(words / 200)),
       html, text,
+      faq: extractFaq(body),
       url: `/blog/${slug}/`,
     });
   }
@@ -461,19 +494,28 @@ ${rel.length ? `<section class="related" aria-labelledby="rel-title">
   </div>
 </section>` : ''}`;
 
+  const articleSchema = {
+    '@context': 'https://schema.org', '@type': 'BlogPosting',
+    headline: a.title, description: a.seoDescription,
+    image: [SITE + a.image], datePublished: a.date, dateModified: a.updated || a.date,
+    author: { '@type': 'Organization', name: a.author, url: SITE },
+    publisher: { '@type': 'Organization', name: 'Insule Plutitoare', logo: { '@type': 'ImageObject', url: `${SITE}/images/logo.png` } },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': SITE + a.url },
+    articleSection: a.category.name, inLanguage: 'ro-RO',
+    keywords: a.keywords || a.tags.join(', '), wordCount: a.text.split(/\s+/).length,
+  };
+  const faqSchema = a.faq.length ? {
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: a.faq.map(item => ({
+      '@type': 'Question', name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  } : null;
+
   write(`blog/${a.slug}`, page({
     title: a.seoTitle, description: a.seoDescription, canonical: a.url,
     ogImage: a.ogImage, ogType: 'article', active: 'blog',
-    jsonld: [breadcrumbLd(crumbs), {
-      '@context': 'https://schema.org', '@type': 'BlogPosting',
-      headline: a.title, description: a.seoDescription,
-      image: [SITE + a.image], datePublished: a.date, dateModified: a.updated || a.date,
-      author: { '@type': 'Organization', name: a.author, url: SITE },
-      publisher: { '@type': 'Organization', name: 'Insule Plutitoare', logo: { '@type': 'ImageObject', url: `${SITE}/images/logo.png` } },
-      mainEntityOfPage: { '@type': 'WebPage', '@id': SITE + a.url },
-      articleSection: a.category.name, inLanguage: 'ro-RO',
-      keywords: a.keywords || a.tags.join(', '), wordCount: a.text.split(/\s+/).length,
-    }],
+    jsonld: [breadcrumbLd(crumbs), articleSchema, ...(faqSchema ? [faqSchema] : [])],
     body,
   }));
 }

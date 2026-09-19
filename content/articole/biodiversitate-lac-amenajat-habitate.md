@@ -74,6 +74,8 @@ Din perspectiva biodiversității, ele aduc într-un lac amenajat tocmai element
 
 Insulele plutitoare creează ecosisteme multirol: susțin viața acvatică și, în același timp, contribuie la [calitatea apei](/blog/cum-reduci-algele-din-lac-natural/) prin filtrarea naturală realizată de rădăcini și vegetație.
 
+Selecția speciilor și a zonelor de plantare este explicată în ghidul despre [plante acvatice pentru iaz și lac](/blog/plante-acvatice-pentru-iaz-si-lac/).
+
 > O insulă plutitoare nu înlocuiește un mal natural, dar readuce pe un lac amenajat structura de habitat care i-a fost eliminată prin construcție.
 
 ## La ce să te aștepți
