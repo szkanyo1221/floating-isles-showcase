@@ -6,11 +6,12 @@ category: biodiversitate
 tags: biodiversitate, habitat acvatic, pesti, pasari, lac de agrement
 author: Echipa insuleplutitoare.ro
 date: 2026-08-18
-image: /images/gallery/insula-plutitoare-iris-galben-lac-960.webp
-imageAlt: Insulă plutitoare cu iriși galbeni înfloriți pe un lac liniștit
+updated: 2026-09-29
+image: /images/gallery/insula-plutitoare-baraj-flori-salicaria-1600.webp
+imageAlt: Insulă plutitoare cu vegetație matură și flori mov de răchitan pe un lac de baraj
 seoTitle: Cum crești biodiversitatea unui lac amenajat
 seoDescription: Ghid practic despre biodiversitatea lacurilor amenajate: de ce lipsesc habitatele, ce poți face concret și cum ajută insulele plutitoare cu vegetație.
-ogImage: /images/gallery/insula-plutitoare-iris-galben-lac-960.webp
+ogImage: /images/gallery/insula-plutitoare-baraj-flori-salicaria-1600.webp
 keywords: biodiversitate lac, habitat pentru pesti, lac amenajat, insule plutitoare, plante acvatice
 featured: false
 status: published
@@ -31,6 +32,8 @@ Un ecosistem acvatic echilibrat nu se măsoară doar în număr de pești. Conte
 - **Puncte de odihnă și hrănire** pentru păsările de apă.
 
 Acolo unde aceste elemente lipsesc, lacul rămâne un bazin de apă, nu un ecosistem.
+
+![Insulă plutitoare cu vegetație lângă un mal de piatră, reflectată în apa unei cariere](/images/gallery/insula-plutitoare-cariera-piatra-reflexie-1600.webp "Malurile de piatră nu oferă loc vegetației; insula aduce structura verde lângă ele.")
 
 ## De ce lacurile amenajate pornesc în dezavantaj
 
@@ -63,20 +66,22 @@ Este pasul cel mai greu pe un lac amenajat — și punctul în care insulele plu
 
 ## Rolul insulelor plutitoare
 
-[Insulele plutitoare](/#despre) pe care le realizăm sunt structuri proiectate și executate de noi, alcătuite din vegetație acvatică, cu rădăcini specifice acoperite cu biofilm și substrat, care plutesc pe suprafața apei. Pot fi amplasate pe orice lac sau corp de apă, indiferent de adâncime sau de tipul malului.
+Privite ca habitat, [insulele vegetale plutitoare](/#despre) funcționează ca o bucată de mal mutată pe apă: deasupra au tulpini, frunze și flori, dedesubt o perdea de rădăcini. Sunt două medii de viață diferite, oferite de același element.
 
-Din perspectiva biodiversității, ele aduc într-un lac amenajat tocmai elementele care lipsesc:
+Pe un lac amenajat, asta înseamnă:
 
 - **Vegetație acvatică** acolo unde plantarea clasică nu este posibilă.
 - **Rădăcini active în coloana de apă**, care oferă suprafață și adăpost sub linia apei.
 - **Zone de umbră** la suprafață.
 - **Habitat** pentru pești, păsări și insecte.
 
-Insulele plutitoare creează ecosisteme multirol: susțin viața acvatică și, în același timp, contribuie la [calitatea apei](/blog/cum-reduci-algele-din-lac-natural/) prin filtrarea naturală realizată de rădăcini și vegetație.
+Florile atrag insecte polenizatoare, iar insulele aflate la distanță de mal sunt mai greu accesibile prădătorilor de uscat. Ce specii apar efectiv depinde de regiune și de lac — nu le putem garanta, putem doar crea condițiile. Rolul rădăcinilor în [calitatea apei](/blog/cum-reduci-algele-din-lac-natural/) este tratat separat.
 
 Selecția speciilor și a zonelor de plantare este explicată în ghidul despre [plante acvatice pentru iaz și lac](/blog/plante-acvatice-pentru-iaz-si-lac/).
 
 > O insulă plutitoare nu înlocuiește un mal natural, dar readuce pe un lac amenajat structura de habitat care i-a fost eliminată prin construcție.
+
+![Insulă plutitoare cu vegetație pe un corp de apă urban, cu reflexia clădirilor în apă](/images/gallery/insula-plutitoare-proiect-urban-reflexie-1600.webp "Chiar și într-un cadru urban, o insulă vegetală adaugă un punct de habitat pe o suprafață de apă altfel goală.")
 
 ## La ce să te aștepți
 
@@ -93,6 +98,6 @@ Selecția speciilor și a zonelor de plantare este explicată în ghidul despre 
 4. Alege pentru acele zone soluții plutitoare, cu vegetație.
 5. Adaptează întreținerea, astfel încât să nu elimini habitatele nou create.
 
-## Discutăm despre lacul tău?
+## Vrei mai multă viață pe lacul tău?
 
-Fiecare corp de apă are propriile particularități. Poți vedea exemple din [proiectele noastre](/#galerie) sau ne poți [contacta direct](/#contact) pentru a discuta cum poate fi crescută biodiversitatea lacului tău.
+Dacă vrei ca lacul tău să atragă mai multă viață, începe prin a ne spune cum arată acum malurile și ce folosință are. [Scrie-ne aici](/#contact) — îți propunem unde ar avea cel mai mare efect un habitat plutitor. Exemple găsești și în [galeria de proiecte](/#galerie).

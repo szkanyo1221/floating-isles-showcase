@@ -6,7 +6,7 @@ category: plante-acvatice
 tags: plante acvatice pentru iaz, plante acvatice pentru lac, vegetatie acvatica, plante emergente, plante submerse, calitatea apei
 author: Echipa insuleplutitoare.ro
 date: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-29
 image: /images/gallery/insula-plutitoare-iris-galben-lac-1600.webp
 imageAlt: Insulă plutitoare cu iriși galbeni și vegetație acvatică matură pe un lac liniștit
 seoTitle: Plante acvatice pentru iaz și lac: ghid de alegere
@@ -32,7 +32,6 @@ Vegetația acvatică nu este un simplu decor. Diferitele părți ale plantei par
 
 Plantele pot sprijini echilibrul unui corp de apă, dar nu înlocuiesc controlul surselor de nutrienți, circulația adecvată sau întreținerea corectă. Dacă apa este verde și algele domină, începe cu ghidul despre [reducerea naturală a algelor din lac](/blog/cum-reduci-algele-din-lac-natural/).
 
-![Insulă plutitoare cu vegetație acvatică densă și matură, reflectată în apa lacului](/images/gallery/insula-plutitoare-vegetatie-densa-oglinda-1600.webp "Vegetația matură aduce structură deasupra și sub suprafața apei.")
 
 ## Începe cu condițiile reale ale iazului sau lacului
 
@@ -72,7 +71,6 @@ Sunt înrădăcinate în substrat, dar dezvoltă frunze la suprafață. Pot crea
 
 > O selecție bună combină zone și funcții. O singură specie plantată peste tot poate arăta uniform, dar oferă mai puțină diversitate și poate deveni dificil de gestionat.
 
-![Insule plutitoare nou plantate cu vegetație acvatică pe un lac montan](/images/gallery/insule-plutitoare-nou-plantate-lac-montan-1600.webp "La început, plantele au nevoie de timp pentru dezvoltarea rădăcinilor și a părții aeriene.")
 
 ## Cum alegi plantele potrivite, pas cu pas
 
@@ -91,7 +89,6 @@ Expresia „plante pentru filtrarea apei” poate crea așteptarea că o anumit�
 
 Plantele emergente viguroase sunt frecvent folosite deoarece dezvoltă rădăcini și țesut vegetal consistent. Efectul nu vine însă doar din numele speciei, ci din contactul dintre rădăcini, apă și microorganisme. Din acest motiv, amplasarea și suprafața disponibilă sunt decisive.
 
-![Insulă plutitoare cu vegetație acvatică matură și flori de salicaria, amplasată pe un lac](/images/gallery/insula-plutitoare-baraj-flori-salicaria-1600.webp "Vegetația matură combină rolul ecologic cu integrarea naturală în peisaj.")
 
 ## Când este utilă o insulă vegetală plutitoare
 
@@ -101,9 +98,7 @@ Plantarea directă este potrivită acolo unde există substrat, adâncime mică 
 
 O insulă plutitoare nu exclude vegetația de mal. Cele două soluții se pot completa: plantele marginale lucrează în zona de tranziție, iar insula aduce vegetație acolo unde plantarea clasică nu este posibilă. Pentru alegerea dimensiunii și a poziției, vezi ghidul despre [amplasarea și întreținerea unei insule plutitoare](/blog/insula-plutitoare-iaz-cum-alegi-amplasare-intretinere/).
 
-![Insulă vegetală plutitoare cu plante acvatice dense, amplasată într-un canal](/images/gallery/insula-vegetala-plutitoare-plante-acvatice-canal-1600.webp "Plantele dezvoltate formează o suprafață vegetală densă chiar și acolo unde plantarea în substrat nu este posibilă.")
 
-![Structură modulară de insulă plutitoare cu plante emergente, pregătită pentru dezvoltare](/images/gallery/insula-plutitoare-structura-modulara-iuta-1600.webp "Structura susține vegetația acolo unde plantele nu pot fi fixate în fundul lacului.")
 
 ## Greșeli frecvente de evitat
 
@@ -125,7 +120,7 @@ O insulă plutitoare nu exclude vegetația de mal. Cele două soluții se pot co
 - Cum vei controla extinderea și cum vei face întreținerea?
 - Sunt speciile alese potrivite și permise pentru amplasamentul respectiv?
 
-Poți compara răspunsurile cu exemplele reale din [galeria noastră de proiecte](/#galerie). Fotografiile arată atât insule proaspăt plantate, cât și vegetație ajunsă la maturitate, în corpuri de apă diferite.
+Poți compara răspunsurile cu exemplele reale din [galeria noastră de proiecte](/#galerie), unde vegetația apare în corpuri de apă diferite.
 
 ![Insulă plutitoare cu vegetație matură și reflexie în apă, într-un peisaj urban](/images/gallery/insula-plutitoare-vegetatie-matura-reflexie-oras-1600.webp "O insulă ajunsă la maturitate se integrează în peisaj și adaugă structură habitatului acvatic.")
 
@@ -155,4 +150,4 @@ Da, dar plantarea directă este adesea limitată de lipsa substratului și de ad
 
 Plantele potrivite sunt cele care răspund condițiilor reale ale lacului și pot fi întreținute pe termen lung. Înainte de a cumpăra specii sau de a stabili forma unei insule, observă apa, malurile și felul în care este folosit locul.
 
-Dacă vrei să introduci vegetație într-un iaz sau lac unde plantarea clasică este dificilă, [contactează-ne pentru o evaluare](/#contact). Putem discuta configurația unei insule vegetale plutitoare adaptate corpului tău de apă.
+Ai deja o listă de plante în minte, dar nu știi unde le poți așeza pe lacul tău? [Trimite-ne câteva detalii despre corpul de apă](/#contact) și discutăm ce vegetație se potrivește și dacă o insulă vegetală plutitoare este varianta potrivită.
