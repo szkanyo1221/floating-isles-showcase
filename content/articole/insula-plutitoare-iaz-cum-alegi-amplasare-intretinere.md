@@ -1,5 +1,5 @@
 ---
-title: Insulă plutitoare pentru iaz: cum alegi, unde o amplasezi și ce întreținere cere
+title: Insulă plutitoare pentru iaz: de la proiect la instalare și întreținere
 slug: insula-plutitoare-iaz-cum-alegi-amplasare-intretinere
 excerpt: Ghid practic pentru proprietarii de iazuri și lacuri: ce trebuie clarificat înainte de a comanda o insulă plutitoare, cum alegi amplasarea și la ce întreținere sezonieră să te aștepți.
 category: insule-plutitoare
@@ -23,7 +23,7 @@ Acest ghid răspunde exact la aceste întrebări, fără promisiuni exagerate �
 
 ## Ce este, pe scurt, o insulă plutitoare
 
-Tehnic, [o insulă vegetală plutitoare](/#despre) are trei părți: o structură care asigură flotabilitatea, un substrat în care se fixează plantele și vegetația propriu-zisă, ale cărei rădăcini cresc liber în apă. Pe care o proiectăm și o executăm noi, iar fiecare dintre aceste părți influențează dimensiunea, amplasarea și întreținerea.
+Tehnic, [o insulă vegetală plutitoare](/#despre) are trei părți: o structură care asigură flotabilitatea, un substrat în care se fixează plantele și vegetația propriu-zisă, ale cărei rădăcini cresc liber în apă. Insulele sunt proiectate și executate de noi, iar fiecare dintre aceste părți influențează dimensiunea, amplasarea și întreținerea.
 
 ![Structură modulară de insulă plutitoare cu plantele emergente fixate în substrat](/images/gallery/insula-plutitoare-structura-modulara-iuta-1600.webp "Structura modulară, imediat după plantare: vegetația abia începe să se dezvolte.")
 
