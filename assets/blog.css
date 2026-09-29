@@ -141,7 +141,7 @@ img { max-width: 100%; }
 .breadcrumbs a:hover { color: hsl(var(--accent)); }
 
 /* Article */
-.article-header { padding: 1.5rem 0 2rem; }
+.article-header { padding-top: 1.5rem; padding-bottom: 2rem; }
 .article-header h1 { font-size: 1.85rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.02em; margin: 0.75rem 0 1rem; }
 .article-hero { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 0.9rem; background: hsl(var(--nature-muted)); display: block; }
 .article-body { font-size: 1.06rem; line-height: 1.85; color: hsla(var(--foreground), 0.9); padding: 2rem 0 1rem; }
