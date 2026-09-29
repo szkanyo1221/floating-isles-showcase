@@ -6,6 +6,7 @@ category: calitatea-apei
 tags: reducerea algelor, calitatea apei, plante acvatice, lac de agrement
 author: Echipa insuleplutitoare.ro
 date: 2026-08-13
+updated: 2026-09-29
 image: /images/gallery/insula-plutitoare-vegetatie-densa-oglinda-960.webp
 imageAlt: Insulă plutitoare cu vegetație densă oglindită în apa unui lac
 seoTitle: Cum reduci algele dintr-un lac în mod natural
@@ -28,6 +29,8 @@ Algele fac parte în mod normal din orice ecosistem acvatic. Devin o problemă a
 - **Vegetație acvatică insuficientă** — lipsesc plantele care ar concura cu algele pentru aceiași nutrienți.
 
 Practic, algele nu sunt cauza, ci simptomul unui dezechilibru. De aceea, tratamentele care atacă doar simptomul dau, de obicei, rezultate de scurtă durată.
+
+![Insulă vegetală plutitoare cu plante acvatice dense într-un canal cu apă liniștită](/images/gallery/insula-vegetala-plutitoare-plante-acvatice-canal-1600.webp "Vegetația densă concurează cu algele pentru aceiași nutrienți și umbrește suprafața apei.")
 
 ## Ce înseamnă o abordare naturală
 
@@ -55,16 +58,16 @@ Zonele complet stagnante sunt cele mai vulnerabile. Orice element care ajută ci
 
 Nu toate lacurile permit plantarea vegetației pe mal sau în apă puțin adâncă. Multe lacuri de agrement, cariere inundate sau bazine artificiale au maluri abrupte, fund pietros ori adâncimi mari — condiții în care plantele acvatice clasice nu se pot dezvolta.
 
-[Insulele plutitoare](/#despre) pe care le realizăm sunt structuri proiectate și executate de noi, alcătuite din vegetație acvatică, cu rădăcini specifice acoperite cu biofilm și substrat, care plutesc pe suprafața apei. Ele pot fi amplasate pe orice lac sau corp de apă, fără ancorare de fundul lacului.
+Din perspectiva algelor, [insulele vegetale plutitoare](/#despre) contează printr-un singur lucru: mută competiția pentru nutrienți acolo unde plantele nu ar exista altfel. Rădăcinile atârnă liber în apă, iar pe ele se formează biofilm — o peliculă de microorganisme care participă la preluarea și transformarea nutrienților dizolvați.
 
-Prin construcția lor, insulele plutitoare aduc într-un lac exact elementele care lipsesc adesea:
+Concret, pe un lac cu probleme de alge, o insulă aduce:
 
 - **Vegetație acolo unde nu poate crește altfel**, indiferent de adâncime sau de tipul malului.
 - **Rădăcini active în coloana de apă**, care participă la procesele naturale de filtrare.
 - **Zone de umbră** la suprafața apei.
 - **Habitat** pentru pești, păsări și insecte.
 
-Rădăcinile și vegetația filtrează în mod natural apa, contribuind la reducerea poluanților. Acest proces limitează dezvoltarea excesivă a algelor și susține un ecosistem acvatic mai sănătos.
+Efectul depinde de suprafața plantată raportată la volumul de apă și de cât de mulți nutrienți continuă să intre în lac. De aceea nu promitem apă limpede într-un sezon: insula este o piesă din echilibrul lacului, nu un filtru mecanic.
 
 > Insulele plutitoare nu sunt un tratament punctual împotriva algelor, ci o intervenție care sprijină echilibrul general al lacului pe termen lung.
 
@@ -77,6 +80,8 @@ Câteva repere utile înainte de a începe:
 - Dacă sursa de nutrienți rămâne activă, orice soluție va fi limitată. Abordarea eficientă combină reducerea aportului cu susținerea vegetației.
 - Fiecare lac este diferit — adâncime, expunere la soare, utilizare, populație de pești.
 
+![Insulă plutitoare cu vegetație pe un lac de carieră cu apă verde-smarald și maluri abrupte](/images/gallery/insula-plutitoare-lac-smarald-cariera-1600.webp "Carierele inundate au adesea maluri abrupte și adâncime mare, unde vegetația nu se poate fixa pe fund.")
+
 ## Pași practici pentru un lac cu probleme de alge
 
 1. Observă când apare problema (sezon, perioadă, zone specifice).
@@ -85,6 +90,6 @@ Câteva repere utile înainte de a începe:
 4. Analizează unde poate fi introdusă vegetație acvatică și unde nu este posibil.
 5. Pentru zonele în care plantarea clasică nu funcționează, ia în calcul insulele plutitoare.
 
-## Vrei o soluție potrivită pentru lacul tău?
+## Apa lacului tău devine verde în fiecare vară?
 
-Fiecare corp de apă are propriile particularități, iar soluția potrivită pornește de la ele. Poți vedea exemple din [proiectele noastre](/#galerie) sau ne poți [contacta direct](/#contact) pentru a discuta despre situația lacului tău și despre cum te putem ajuta.
+Descrie-ne pe scurt când apar algele, cât de adânc este lacul și ce se află în jurul lui. Cu aceste informații [ne poți scrie aici](/#contact), iar noi îți spunem sincer dacă o insulă vegetală plutitoare are sens în cazul tău sau dacă primul pas ar trebui să fie altul.

@@ -6,11 +6,12 @@ category: insule-plutitoare
 tags: insule plutitoare, iaz, amplasare, intretinere, lac de agrement
 author: Echipa insuleplutitoare.ro
 date: 2026-08-26
-image: /images/gallery/insula-plutitoare-ovala-iarba-inalta-960.webp
-imageAlt: Insulă plutitoare ovală cu iarbă înaltă, reflectată în apa unui iaz, lângă un ponton de lemn
+updated: 2026-09-29
+image: /images/gallery/insula-plutitoare-instalare-lac-montan-1600.webp
+imageAlt: Instalarea unei insule plutitoare pe un lac montan
 seoTitle: Insulă plutitoare pentru iaz: alegere, amplasare, întreținere
 seoDescription: Cum alegi o insulă plutitoare pentru iaz sau lac: dimensiune, amplasare, ancorare și întreținere pe parcursul anului. Ghid practic, pas cu pas.
-ogImage: /images/gallery/insula-plutitoare-ovala-iarba-inalta-960.webp
+ogImage: /images/gallery/insula-plutitoare-instalare-lac-montan-1600.webp
 keywords: insula plutitoare pentru iaz, insule plutitoare, amplasare insula plutitoare, intretinere insula plutitoare, lac de agrement
 featured: false
 status: published
@@ -22,9 +23,9 @@ Acest ghid răspunde exact la aceste întrebări, fără promisiuni exagerate �
 
 ## Ce este, pe scurt, o insulă plutitoare
 
-[Insulele plutitoare](/#despre) pe care le realizăm sunt structuri proiectate și executate de noi, alcătuite din vegetație acvatică, cu rădăcini specifice acoperite cu biofilm și substrat, care plutesc pe suprafața apei. Pot fi amplasate pe orice lac sau corp de apă, indiferent de adâncime sau de tipul malului.
+Tehnic, [o insulă vegetală plutitoare](/#despre) are trei părți: o structură care asigură flotabilitatea, un substrat în care se fixează plantele și vegetația propriu-zisă, ale cărei rădăcini cresc liber în apă. Pe care o proiectăm și o executăm noi, iar fiecare dintre aceste părți influențează dimensiunea, amplasarea și întreținerea.
 
-Practic, aduci vegetație acolo unde plantarea clasică nu este posibilă — pe apă, nu pe mal.
+![Structură modulară de insulă plutitoare cu plantele emergente fixate în substrat](/images/gallery/insula-plutitoare-structura-modulara-iuta-1600.webp "Structura modulară, imediat după plantare: vegetația abia începe să se dezvolte.")
 
 ## Ce clarifici înainte de a comanda
 
@@ -48,6 +49,8 @@ Ne ajută să propunem o soluție realistă dacă știi:
 - expunerea la soare și la vânt;
 - cum e folosit corpul de apă (agrement, pescuit, decorativ);
 - dacă există curent, variații de nivel sau evacuări în apropiere.
+
+![Mai multe insule plutitoare nou plantate, distribuite pe un lac montan](/images/gallery/insule-plutitoare-nou-plantate-lac-montan-1600.webp "Mai multe elemente distribuite pe suprafața lacului, în primul sezon după instalare.")
 
 ## Cum alegi dimensiunea
 
@@ -85,6 +88,8 @@ Dacă lacul tău are diferențe mari de nivel între sezoane, spune-ne din start
 
 ## Ce întreținere cere, pe parcursul anului
 
+![Insulă plutitoare cu vegetație tânără pe structură modulară, plutind pe lac](/images/gallery/insula-plutitoare-vegetatie-tanara-lac-1600.webp "În primul an, vegetația este încă tânără — perioada în care verificările sunt cele mai utile.")
+
 Insulele plutitoare nu sunt echipamente cu consumabile, dar nici obiecte pe care le uiți complet.
 
 - **Primăvara** — verifici ancorarea după perioada rece și urmărești pornirea în vegetație.
@@ -95,6 +100,8 @@ Insulele plutitoare nu sunt echipamente cu consumabile, dar nici obiecte pe care
 Cea mai frecventă greșeală este întreținerea „de curățenie”: îndepărtarea vegetației pentru că pare dezordonată. Exact acea vegetație este soluția — pentru [habitatele din lac](/blog/biodiversitate-lac-amenajat-habitate/) și pentru filtrarea naturală realizată de rădăcini.
 
 ## La ce să te aștepți în timp
+
+![Insulă plutitoare ovală cu iarbă înaltă, reflectată în apă lângă un ponton de lemn](/images/gallery/insula-plutitoare-ovala-iarba-inalta-1600.webp "Aceeași tehnologie, câteva sezoane mai târziu: vegetația a acoperit complet structura.")
 
 - Efectele apar treptat, pe măsură ce vegetația și sistemul radicular se dezvoltă.
 - Aspectul se schimbă sezonier, la fel ca la orice vegetație.
@@ -109,6 +116,6 @@ Cea mai frecventă greșeală este întreținerea „de curățenie”: îndepă
 4. Verifică unde se vede cel mai bine și unde este cel mai ferit de vânt.
 5. Cere o evaluare, ca să discutăm dimensiunea și configurația potrivite.
 
-## Discutăm despre iazul sau lacul tău?
+## Pregătit să treci de la idee la proiect?
 
-Poți vedea exemple reale în [galeria de proiecte](/#galerie) sau ne poți [contacta direct](/#contact) pentru o evaluare gratuită a corpului tău de apă. Îți propunem o soluție adaptată situației concrete, nu un produs standard.
+Dacă ai deja notate suprafața, adâncimea și tipul malului, ai tot ce ne trebuie pentru o primă discuție. [Cere o evaluare gratuită](/#contact) și îți propunem dimensiunea, configurația și modul de ancorare potrivite iazului tău.
